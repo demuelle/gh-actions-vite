@@ -1,37 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Calculator from './components/Calculator';
+import Advertisement from './components/Advertisement';
+
+const companyName1: string = 'ABC Corporation';
+const productDescription1 = 'Great Product!';
+const price1 = '$19.99';
+
+const companyName2: string = 'XYZ Corporation';
+const productDescription2 = 'Amazing Product!';
+const price2 = '$49.99';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const str1 = "hello";
-  const str2 = 'world';
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Advertisement companyName={companyName1} productDescription={productDescription1} price={price1} />
+      <Advertisement companyName={companyName2} productDescription={productDescription2} price={price2} />
+      <Calculator />
     </>
   )
 }
 
-export default App
+export default App;
