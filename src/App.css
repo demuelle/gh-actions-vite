@@ -37,6 +37,26 @@
   padding: 2em;
 }
 
+.card-header {
+  background-color: lightgreen;
+}
+
 .read-the-docs {
   color: #888;
+}
+
+.alert-warning {
+  background-color: yellow;
+}
+
+.alert-danger {
+  background-color: red;
+}
+
+.btn-primary {
+  border: 2px solid black;
+}
+
+.advertisement {
+  background-color: lightblue;
 }
