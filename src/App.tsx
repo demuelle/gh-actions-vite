@@ -7,7 +7,7 @@ const productDescription1 = 'Great Product!';
 const price1 = '$19.99';
 
 const companyName2: string = 'XYZ Corporation';
-const productDescription2 = 'Amazing Product!';
+const productDescription2 = 'Amazing Products!';
 const price2 = '$49.99';
 
 function App() {
